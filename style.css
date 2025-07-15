@@ -1,0 +1,60 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav>ol{
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+    padding: 0px;
+}
+
+.menu{
+    display: none;
+}
+
+.btn{
+    border: none;
+    background-color: blue;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    padding: 0px;
+    padding-right: 15px;
+    display: flex;
+    align-items: center;
+    padding-left: 1px;
+    gap: 5px;
+}
+
+.subLinks{
+    display: block;
+    border: 1px solid black;
+    margin-top: 20px;
+    position:absolute ;
+    top: 0px;
+    left: 0px;
+}
+.subLinks>ol{
+    list-style-type: none;
+    padding: 10px 20px;
+}
+
+.link:hover+.sublinks{
+    display: block;
+}
+
+
+
+
+
+
+@media (max-width:1100px) {
+    .menu{
+        display: block;
+    }
+    .links{
+        display: none;
+    }
+}
