@@ -1,60 +1,327 @@
-nav{
+body{
+    margin: 0px 100px;
+    /* background-color: #e8f8fd; */
+}
+.nav-bar{
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    align-items: center;
+    background-color: white;
+    /* padding: 0 100px; */
 }
-
-nav>ol{
-    list-style-type: none;
+.links-1{
     display: flex;
+    list-style-type: none;
+    align-items: center;
     gap: 30px;
-    padding: 0px;
+}
+.Iteam1>.links-1>li:hover{
+    color: aqua;
+    /* text-decoration: underline; */
 }
 
-.menu{
-    display: none;
-}
 
-.btn{
-    border: none;
-    background-color: blue;
-    border-radius: 20px;
-    color: rgb(255, 255, 255);
-    padding: 0px;
-    padding-right: 15px;
+
+.Iteam1{
     display: flex;
-    align-items: center;
-    padding-left: 1px;
-    gap: 5px;
 }
-
-.subLinks{
-    display: block;
-    border: 1px solid black;
-    margin-top: 20px;
-    position:absolute ;
-    top: 0px;
-    left: 0px;
+.Iteam2{
+    display: flex;
 }
-.subLinks>ol{
+.down{
+    display: flex;
+    gap: 10px;
     list-style-type: none;
-    padding: 10px 20px;
+    gap: 20px;
 }
-
-.link:hover+.sublinks{
-    display: block;
+.logo{
+    width: 150px;
 }
-
-
-
-
-
-
-@media (max-width:1100px) {
-    .menu{
-        display: block;
-    }
-    .links{
+.logo>img{
+    width: 100%;
+    height: 100%;
+}
+@media screen and (max-width:900px) {
+    .links-1{
         display: none;
     }
+    .app{
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width:700px) {
+    .signin{
+        display: none;
+    }
+    
+}
+
+/* Dropdown Styling */
+.Booking, .Bills {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    list-style: none;
+    padding: 10px 15px;
+    margin: 0;
+    color: black;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    min-width: 150px;
+    z-index: 100;
+}
+
+.Booking > li, .Bills > li {
+    padding: 8px 12px;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.Booking > li:hover, .Bills > li:hover {
+    background-color: #f0f0f0;
+    border-radius: 3px;
+}
+
+/* Show dropdown on hover */
+.dropdown1:hover .Booking,
+.dropdown2:hover .Bills {
+    display: block;
+}
+
+.Travelling{
+    display: flex;
+    /* margin: 10px 100px; */
+    gap: 50px;
+    margin-bottom: 30px;
+}
+.Trip{
+    display: flex;
+    gap: 50px;
+}
+.Booking-details{
+    display: flex;
+    gap: 50px;
+}
+.to{
+    display: flex;
+    align-items: end;
+    gap: 20px;
+}
+
+h1,h2,h3,h6{
+    color: rgb(113, 115, 116);
+    margin: 0px;
+}
+.travel-date{
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.return{
+    border-right: 2px solid black;
+    padding-right: 20px;
+}
+.search{
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: rgb(67, 131, 236);
+    color: white;
+    text-decoration: dashed;
+}
+.travel-table{
+    border: 1px solid rgb(70, 69, 69);
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+.fares{
+    display: flex;
+    gap: 20px;
+}
+.armed{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+}
+.crosil-img{
+    width: 450px;
+    height: 150px;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+.ads{
+    display: flex;
+    margin-bottom: 30px;
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+}
+.fifth-sec{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.recharge-flex{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+.Recharge{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 20px;
+}
+.Bills-flex{
+    /* display: flex; */
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 20px;
+}
+.center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.center:hover{
+    transform: scale(1.1);
+    /* background-color: #ffffff; */
+    /* box-shadow: 100%; */
+}
+.fifth-footer{
+    display: flex;
+    background-color: skyblue;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    padding: 10px;
+}
+.Sixth-sec{
+    border: 2px solid black;
+    padding: 100px;
+    display: flex;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+.Sixth-sec part-1 p {
+    margin: 0px;
+}
+.Seventh-sec{
+    display: flex;
+    border: 2px solid black;
+    background-color: darkblue;
+    border-radius: 20px;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.Seventh-sec h3{
+    color: white;
+}
+.Seventh-sec button{
+    padding: 5px 20px;
+    border: 2px solid white;
+    color: white;
+    background-color: darkblue;
+    border-radius: 20px;
+}
+
+.Eigth-Sec{
+    display: flex;
+    /* justify-content: space-around; */
+    gap: 10px;
+    margin-bottom: 30px;
+}
+.e-flex{
+    display: flex;
+    gap: 30px;
+}
+.Eigth-Sec .Eigth-1 .e-flex button{
+    padding: 5px 20px;
+    border: 2px solid white;
+    color: white;
+    background-color: darkblue;
+    border-radius: 20px;
+}
+.Eigth-Sec .Eigth-1 button{
+    padding: 5px 20px;
+    border: 2px solid white;
+    color: white;
+    background-color: darkblue;
+    border-radius: 20px;
+}
+.Eigth-1{
+    padding: 100px;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.Ninth-sec{
+    display: flex;
+    padding: 100px;
+    border: 2px solid black;
+    border-radius: 20px;
+    gap: 300px;
+    margin-bottom: 30px;
+}
+
+.Ninth-img{
+    display: flex;
+    gap: 10px;
+}
+.Tenth-Sec{
+    display: flex;
+    padding: 100px;
+    border: 2px solid black;
+    border-radius: 20px;
+    gap: 300px;
+    margin-bottom: 30px;
+}
+.Tenth-Sec button{
+    padding: 5px 20px;
+    border: 2px solid white;
+    color: white;
+    background-color: darkblue;
+    border-radius: 20px;
+}
+
+.footer-1{
+    display: flex;
+    gap: 20px;
+}
+.footer-2{
+    width: 100%;
+    border-bottom: 1px solid rgb(75, 73, 73);
+
+}
+.pay-footer{
+    margin-bottom: 30px;
+}
+.last{
+    display: flex;
+    margin-top: 30px;
+}
+.follow{
+    margin-left: 900px;
+    gap: 100px;
+}
+
+.but1{
+    border-radius: 10px;
+    color: #f0f0f0;
+    background-color: skyblue;
+    padding: 5px 20px;
+    border: 2px solid white;
+}
+.but2{
+    padding: 5px 20px;
+    border-radius: 10px;
+    color: white;
+    background-color: darkblue;
 }
